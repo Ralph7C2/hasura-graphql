@@ -1,6 +1,7 @@
 services:
 - type: web
   name: hasura
+  region: frankfurt
   env: docker
   autoDeploy: false
   healthCheckPath: /healthz
@@ -20,3 +21,4 @@ services:
 #    generateValue: true
 databases:
 - name: hasura
+  region: frankfurt
